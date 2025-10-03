@@ -1,0 +1,138 @@
+.chatWindow {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Mensaje vacío */
+.empty {
+  color: #aaa;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  padding: 0 1rem;
+}
+
+/* Burbujas */
+.message {
+  max-width: 78%;
+  padding: 0.65rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.text {
+  margin: 0;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #bbb;
+  align-self: flex-end;
+}
+
+/* Diferencias entre user y bot */
+.user {
+  align-self: flex-end;
+  background: #4ea1f3;
+  color: #fff;
+  border-color: #4ea1f3;
+  border-top-right-radius: 6px;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #242424;
+  color: #e0e0e0;
+  border-color: #333;
+  border-top-left-radius: 6px;
+}
+
+/* Input de chat */
+.chatInput {
+  display: flex;
+  gap: 0.6rem;
+  border-top: 1px solid #2c2c2c;
+  background: #1a1a1a;
+  padding: 0.6rem;
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.chatInput textarea {
+  flex: 1;
+  min-height: 44px;
+  max-height: 140px;
+  resize: vertical;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.95rem;
+  background: #232323;
+  color: #fff;
+}
+
+.chatInput button {
+  background: #4ea1f3;
+  border: none;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  align-self: center; /* 🔥 evita que se estire */
+}
+
+.chatInput button:hover {
+  filter: brightness(0.95);
+}
+
+/* Scrollbar */
+.chatWindow::-webkit-scrollbar {
+  width: 8px;
+}
+.chatWindow::-webkit-scrollbar-thumb {
+  background: #2f2f2f;
+  border-radius: 6px;
+}
+.chatWindow::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .chatWindow {
+    padding: 0.6rem;
+    max-width: 100%;
+  }
+  .message {
+    max-width: 90%;
+    font-size: 0.88rem;
+  }
+  .chatInput {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+  .chatInput textarea {
+    font-size: 0.88rem;
+  }
+  .chatInput button {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+}

@@ -1,0 +1,90 @@
+/* LogIn.module.css */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+  font-family: sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.button {
+  background: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
+
+/* Texto auxiliar */
+.text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.link {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}

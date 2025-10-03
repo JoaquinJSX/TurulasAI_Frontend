@@ -1,0 +1,105 @@
+.container {
+  font-family: "Segoe UI", sans-serif;
+  color: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero {
+  margin-top: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4b6ef5;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btnPrimary, .btnSecondary {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary {
+  background: #4b6ef5;
+  color: white;
+}
+
+.btnPrimary:hover {
+  background: #3650c6;
+}
+
+.btnSecondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btnSecondary:hover {
+  background: #e0e0e0;
+}
+
+.features {
+  margin-top: 4rem;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.features li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+.comingSoon {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #f9f9ff;
+  border-radius: 12px;
+}
+
+.comingSoon h2 {
+  color: #4b6ef5;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

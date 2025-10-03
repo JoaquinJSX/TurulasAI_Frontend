@@ -1,0 +1,106 @@
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  flex-direction: column;
+}
+
+.catalog {
+  width: 100%;
+  max-width: 520px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
+.catalog h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.chatArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 🔥 separa botón y título */
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #2c2c2c;
+  background: #151515;
+  gap: 0.5rem;
+}
+
+.chatTitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #f0f0f0;
+  text-align: center;
+  flex: 1;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  color: #4ea1f3;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.backBtn:hover {
+  text-decoration: underline;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 1rem;
+  color: #a9a9a9;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 🔧 Responsive ajustes */
+@media (max-width: 768px) {
+  .catalog {
+    padding: 0.8rem;
+  }
+
+  .chatHeader {
+    padding: 0.5rem 0.7rem;
+    flex-direction: row;
+  }
+
+  .chatTitle {
+    font-size: 0.95rem;
+  }
+
+  .backBtn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    padding: 0.6rem;
+  }
+
+  .chatTitle {
+    font-size: 0.9rem;
+  }
+
+  .backBtn {
+    font-size: 0.8rem;
+  }
+}
