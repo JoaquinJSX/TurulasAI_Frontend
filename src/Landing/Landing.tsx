@@ -11,8 +11,8 @@ export default function LandingPage() {
           Descubre el futuro de la productividad, el aprendizaje y las finanzas.
         </p>
         <div className={styles.buttons}>
-          <a href="/signin" className={styles.btnPrimary}>Sign In</a>
-          <a href="/signup" className={styles.btnSecondary}>Sign Up</a>
+          <a href="/#signin" className={styles.btnPrimary}>Sign In</a>
+          <a href="/#signup" className={styles.btnSecondary}>Sign Up</a>
         </div>
       </header>
 
