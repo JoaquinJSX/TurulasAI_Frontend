@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { createContext, useMemo, useContext } from "react";
 
 import LandingPage from "./Landing/Landing";
@@ -74,7 +74,7 @@ export default function App() {
   return (
     <div>
       <appContext.Provider value={contextValue}>
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               {/* Redirección base: que caiga siempre en main_content;
                   si no está logueado, RequireAuth ya lo manda a /login */}
@@ -100,7 +100,7 @@ export default function App() {
               {/* 404 simple */}
               <Route path="*" element={<Navigate to="/main" replace />} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </appContext.Provider>
     </div >
   );
